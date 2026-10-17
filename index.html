@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bug‘doy — nonvoyxona va qandolatxona | Toshkent</title>
+  <meta name="description" content="Bug‘doy nonvoyxonasi: har tong yangi pishgan nonlar, kruassanlar, shirinliklar va buyurtma tortlar. Onlayn savatga qo‘shing va Telegram orqali buyurtma bering.">
+  <meta name="theme-color" content="#5B3A24">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bug‘doy — nonvoyxona va qandolatxona">
+  <meta property="og:description" content="Har tong yangi pishgan nonlar, shirinliklar va tortlar. Buyurtma Telegram orqali.">
+  <meta property="og:image" content="assets/img/hero-sm.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero.webp" imagesrcset="assets/img/hero-sm.webp 900w, assets/img/hero.webp 1800w" imagesizes="100vw">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#menyu">Menyuga o‘tish</a>
+
+  <!-- ===== Bosh qism ===== -->
+  <header class="header" id="header">
+    <div class="container header__row">
+      <a href="#" class="logo" aria-label="Bug‘doy — bosh sahifa">
+        <img src="favicon.svg" alt="" width="36" height="36">
+        <span>Bug‘doy</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#menyu">Menyu</a>
+        <a href="#haqimizda">Biz haqimizda</a>
+        <a href="#aloqa">Aloqa</a>
+        <a class="nav__phone" data-phone href="tel:+998901234567">+998 90 123 45 67</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" data-phone href="tel:+998901234567">+998 90 123 45 67</a>
+        <button class="btn btn--primary btn--sm" data-open-cart>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="hide-xs">Buyurtma berish</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Asosiy banner ===== -->
+    <section class="hero">
+      <img class="hero__img" src="assets/img/hero.webp" srcset="assets/img/hero-sm.webp 900w, assets/img/hero.webp 1800w" sizes="100vw" alt="Pechdan endigina uzilgan kruassanlar" fetchpriority="high">
+      <div class="hero__shade"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">Har tong 06:00 dan pishiramiz</p>
+        <h1>Issiq non hidi —<br>uyingizgacha</h1>
+        <p class="hero__lead">Tabiiy un, sariyog‘ va sabr bilan tayyorlangan nonlar, shirinliklar va bayram tortlari.</p>
+        <div class="hero__cta">
+          <a href="#menyu" class="btn btn--light">Menyuni ko‘rish</a>
+          <button class="btn btn--ghost-light" data-open-cart>Buyurtma berish</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Mahsulotlar ===== -->
+    <section class="section" id="menyu">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Menyu</p>
+            <h2>Bugun pechdan chiqqanlar</h2>
+          </div>
+          <div class="tabs" role="tablist" id="tabs" aria-label="Kategoriyalar"></div>
+        </div>
+        <div class="grid" id="products" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===== Biz haqimizda ===== -->
+    <section class="section section--cream" id="haqimizda">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img src="assets/img/haqimizda.webp" alt="Xamir tayyorlash jarayoni: shokoladli bulochkalar va oxlov" loading="lazy" width="900" height="1100">
+          <div class="about__stamp"><strong>2012</strong><span>yildan beri</span></div>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">Biz haqimizda</p>
+          <h2>Kichik oilaviy nonvoyxona, katta mehr</h2>
+          <p>Bug‘doy 2012-yilda Chilonzordagi kichik tandirdan boshlangan. Bugun ham har bir non qo‘lda shakllanadi, xamir shoshmasdan tindiriladi, tortlar esa buyurtmangiz bo‘yicha alohida bezatiladi.</p>
+          <ul class="features">
+            <li>
+              <span class="features__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V8"/><path d="M12 12c-3 0-5-2-5-5 3 0 5 2 5 5zM12 12c3 0 5-2 5-5-3 0-5 2-5 5zM12 17c-3 0-5-2-5-5 3 0 5 2 5 5zM12 17c3 0 5-2 5-5-3 0-5 2-5 5zM12 8c0-2 0-4 0-5"/></svg></span>
+              <div><strong>Tabiiy tarkib</strong><p>Oliy navli un, sariyog‘ va tuxum. Margarin va konservantlarsiz.</p></div>
+            </li>
+            <li>
+              <span class="features__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M5 4 3 6M19 4l2 2"/></svg></span>
+              <div><strong>Har kuni yangi</strong><p>Kechagi mahsulot sotilmaydi — vitrinada faqat bugungi pishiriq.</p></div>
+            </li>
+            <li>
+              <span class="features__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span>
+              <div><strong>Tez yetkazib berish</strong><p>Shahar bo‘ylab 60 daqiqada, 150 000 so‘mdan yuqori buyurtmaga bepul.</p></div>
+            </li>
+            <li>
+              <span class="features__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7z"/><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0M12 11V7"/><path d="M12 3.5c.8.9 1 1.7 0 2.5-1-.8-.8-1.6 0-2.5z"/></svg></span>
+              <div><strong>Buyurtma tortlar</strong><p>Tug‘ilgan kun, to‘y va korporativ tadbirlar uchun — 1 kun oldin buyurtma.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Aloqa ===== -->
+    <section class="section" id="aloqa">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Aloqa</p>
+            <h2>Kelib tatib ko‘ring</h2>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact__card reveal">
+            <h3>Manzil</h3>
+            <p data-address></p>
+            <a class="link" data-map href="#" target="_blank" rel="noopener">Xaritada ochish →</a>
+          </div>
+          <div class="contact__card reveal">
+            <h3>Ish vaqti</h3>
+            <dl class="hours" data-hours></dl>
+          </div>
+          <div class="contact__card reveal">
+            <h3>Bog‘lanish</h3>
+            <ul class="contact__links">
+              <li><a data-phone href="tel:+998901234567">+998 90 123 45 67</a></li>
+              <li><a data-telegram href="#" target="_blank" rel="noopener">Telegram</a></li>
+              <li><a data-instagram href="#" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <span>© <span id="year">2026</span> Bug‘doy nonvoyxonasi</span>
+      <a href="#">Yuqoriga ↑</a>
+    </div>
+  </footer>
+
+  <!-- Mobil: pastdagi savat paneli -->
+  <button class="cart-bar" data-open-cart hidden>
+    <span><span data-cart-count>0</span> ta mahsulot</span>
+    <strong data-cart-total>0 so‘m</strong>
+    <span class="cart-bar__go">Savat →</span>
+  </button>
+
+  <!-- ===== Savat ===== -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cart" aria-label="Savat" aria-hidden="true" tabindex="-1">
+    <div class="drawer__head">
+      <h2 id="drawerTitle">Savat</h2>
+      <button class="icon-btn" data-close aria-label="Yopish">✕</button>
+    </div>
+
+    <!-- 1-qadam: savat -->
+    <div class="drawer__body" id="stepCart">
+      <ul class="cart-list" id="cartList"></ul>
+      <div class="cart-empty" id="cartEmpty">
+        <p>Savat hozircha bo‘sh.</p>
+        <a href="#menyu" class="btn btn--outline" data-close>Menyuni ko‘rish</a>
+      </div>
+    </div>
+
+    <!-- 2-qadam: ma’lumotlar -->
+    <form class="drawer__body order-form" id="stepForm" hidden novalidate>
+      <label>Ismingiz<input name="name" autocomplete="name" required placeholder="Masalan, Dilnoza"></label>
+      <label>Telefon raqamingiz<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+998 __ ___ __ __"></label>
+      <fieldset class="seg">
+        <legend>Qabul qilish usuli</legend>
+        <label><input type="radio" name="method" value="Yetkazib berish" checked><span>Yetkazib berish</span></label>
+        <label><input type="radio" name="method" value="Olib ketish"><span>Olib ketaman</span></label>
+      </fieldset>
+      <label data-address-field>Manzil<input name="address" autocomplete="street-address" placeholder="Ko‘cha, uy, xonadon"></label>
+      <label>Izoh <small>(ixtiyoriy)</small><textarea name="note" rows="2" placeholder="Tortga yozuv, vaqt va h.k."></textarea></label>
+      <p class="form-error" id="formError" role="alert" hidden></p>
+    </form>
+
+    <!-- 3-qadam: tayyor matn -->
+    <div class="drawer__body" id="stepDone" hidden>
+      <ol class="steps">
+        <li>Buyurtma matnini nusxalang</li>
+        <li>Telegram chatimizni oching</li>
+        <li>Matnni joylab, yuboring</li>
+      </ol>
+      <textarea class="order-text" id="orderText" readonly rows="12"></textarea>
+    </div>
+
+    <div class="drawer__foot">
+      <div class="total"><span>Jami</span><strong data-cart-total>0 so‘m</strong></div>
+      <div class="drawer__actions" id="actCart">
+        <button class="btn btn--primary btn--block" id="toForm">Buyurtma berish</button>
+      </div>
+      <div class="drawer__actions" id="actForm" hidden>
+        <button class="btn btn--outline" id="backToCart">← Orqaga</button>
+        <button class="btn btn--primary" type="submit" form="stepForm">Matnni tayyorlash</button>
+      </div>
+      <div class="drawer__actions drawer__actions--col" id="actDone" hidden>
+        <button class="btn btn--outline btn--block" id="copyBtn">Matnni nusxalash</button>
+        <a class="btn btn--primary btn--block" id="tgBtn" href="#" target="_blank" rel="noopener">Telegramda yuborish</a>
+        <button class="btn btn--text" id="clearAfter">Savatni tozalash</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
